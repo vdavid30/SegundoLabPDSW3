@@ -19,6 +19,9 @@ public class CalculadorCuentaConlva implements CalculadorCuenta{
      * @return El costo de la orden con el valor completo
      */
     public int calcularCosto(Orden o){
-        return 1;
+        double total=0;
+        for (ItemOrden p:o.getItemsOrden()){
+            total+=p.getPrecio();}        
+        return (int) total;
     }
 }

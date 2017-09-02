@@ -20,6 +20,12 @@ public class CalculadorCuentaConPropina implements CalculadorCuenta{/**
      * @return El costo de la orden
      */
     public int calcularCosto(Orden o){
-        return 1;
+        double total=0;
+        for (ItemOrden p:o.getItemsOrden()){
+            total+=p.getPrecio();}    
+        if (total>15000){
+            total=total*1.1;
+        }    
+    return (int) total;
     }
 }

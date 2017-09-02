@@ -5,6 +5,7 @@
  */
 package verificador;
 
+import edu.eci.pdsw.examples.model.Bebida;
 import edu.eci.pdsw.examples.model.Plato;
 
 /**
@@ -13,4 +14,5 @@ import edu.eci.pdsw.examples.model.Plato;
  */
 public interface VerificadorIVA {
     public float obtenerPorcentaje(Plato p);
+    public float obtenerPorcentajeBebida(Bebida b);
 }

@@ -105,7 +105,7 @@ public class CalculadorCuentasTest {
     @Test
     public void cuentaConIvaConPropinaCE2(){      
         CalculadorCuentaConPropina calcP= new CalculadorCuentaConPropina();
-        assertTrue("Fallo prueba Cuenta con iva con propina",calcP.calcularCosto(ordenCara)==16160);       
+        assertTrue("Fallo prueba Cuenta con iva con propina",calcP.calcularCosto(ordenCara)==17600);       
         }
     
     //Prueba CE3
@@ -113,7 +113,7 @@ public class CalculadorCuentasTest {
     public void cuentaConIvaSinPropinaCE3(){      
         CalculadorCuentaConPropina calcP= new CalculadorCuentaConPropina();
         assertTrue("Fallo prueba Cuenta con iva sin propina CE3",calcP.calcularCosto(ordenConC)==13000);       
-        }
+        } 
     
     //Prueba CE4
     @Test
@@ -126,7 +126,7 @@ public class CalculadorCuentasTest {
     @Test
     public void cuentaConIvaConAzucarCE5(){      
         CalculadorCuentaConlva calcI= new CalculadorCuentaConlva();
-        assertTrue("Fallo prueba Cuenta con iva con azucar CE5",calcI.calcularCosto(ordenConC)==13200);       
+        assertTrue("Fallo prueba Cuenta con iva con azucar CE5",calcI.calcularCosto(ordenConC)==13000);       
         }
     
 }
