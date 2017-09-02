@@ -122,7 +122,7 @@ public class CalculadorCuentasTest {
         assertTrue("Fallo prueba Cuenta con iva sin azucar CE4",calcI.calcularCosto(ordenSinC)==14000);   
     }
                
-    //Prueba CE5
+    //Prueba CE5.
     @Test
     public void cuentaConIvaConAzucarCE5(){      
         CalculadorCuentaConlva calcI= new CalculadorCuentaConlva();
