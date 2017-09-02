@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
 import verificador.impl.VerificadorEstandar;
 
 /**
- * Diseño de pruebas:
+ * Diseño de pruebas:   
  * 
  * Clases de equivalencia:
  *  
@@ -50,7 +50,7 @@ import verificador.impl.VerificadorEstandar;
  *      
  *      CF4: Cuentas encima de 15.000 pesos en CalculadorCuentaConIva + VerificadorIVAEstandar.
  *           Clases de equivalencia relacionadas: CE3 y CE5.
- *           Resultado esperado: Sumatoria del precio de las comidas más 10% de propina.
+ *           Resultado esperado: Sumatoria del precio de las comidas más 10% de propina...
  * 
  */
 public class CalculadorCuentasTest {
