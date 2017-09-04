@@ -6,7 +6,7 @@
 package edu.eci.pdsw.test;
 
 import edu.eci.pdsw.examples.beans.impl.*;
-import edu.eci.pdsw.examples.beans.impl.CalculadorCuentaConlva;
+import edu.eci.pdsw.examples.beans.impl.CalculadorCuentaConIva;
 import edu.eci.pdsw.examples.model.*;
 import org.junit.Before;
 import org.junit.Test;
@@ -118,14 +118,14 @@ public class CalculadorCuentasTest {
     //Prueba CE4
     @Test
     public void cuentaConIvaSinAzucarCE4(){      
-        CalculadorCuentaConlva calcI= new CalculadorCuentaConlva();       
+        CalculadorCuentaConIva calcI= new CalculadorCuentaConIva();       
         assertTrue("Fallo prueba Cuenta con iva sin azucar CE4",calcI.calcularCosto(ordenSinC)==14000);   
     }
                
     //Prueba CE5.
     @Test
     public void cuentaConIvaConAzucarCE5(){      
-        CalculadorCuentaConlva calcI= new CalculadorCuentaConlva();
+        CalculadorCuentaConIva calcI= new CalculadorCuentaConIva();
         assertTrue("Fallo prueba Cuenta con iva con azucar CE5",calcI.calcularCosto(ordenConC)==13000);       
         }
     
